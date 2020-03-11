@@ -1,21 +1,24 @@
 <template>
-	<div>
-		<router-link to='/'></router-link>
-		<FooterGuide></FooterGuide>
-	</div>
+<div>
+  <router-view></router-view>
+  <FooterGuide></FooterGuide>
+</div>
 </template>
 
 <script>
 import FooterGuide from './components/FooterGuide/FooterGuide.vue'
 export default {
-	data() {
-		return {
+  mounted () {
 
-		}
-	},
-	components: {
-		FooterGuide
-	}
+  },
+  data () {
+    return {
+
+    }
+  },
+  components: {
+    FooterGuide
+  }
 }
 </script>
 
